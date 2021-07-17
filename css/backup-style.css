@@ -430,15 +430,16 @@ Projects
 .projects {
 	margin-bottom: 4rem;
 }
+.projects .title {
+	margin: 2rem 0 4rem;
+}
 .projects h2 {
 	text-transform: capitalize;
 	font-weight: 700;
 	display: flex;
-	margin: 1rem;
+	/* margin: 1rem; */
 }
-.projects .title {
-	visibility: hidden;
-}
+
 .projects .boxes {
 	display: flex;
 	justify-content: space-between;
@@ -454,9 +455,7 @@ Projects
 	cursor: default;
 	transition: all 0.4s ease;
 }
-/* .box .top-half {
-	border: 1px solid var(--project-border);
-} */
+
 .box .image-container {
 	margin: 0;
 	border-bottom: none;
@@ -546,7 +545,7 @@ Contact Me
 	margin: 0 auto 2rem;
 }
 .contact .title {
-	visibility: hidden;
+	display: none;
 	margin-bottom: 1rem;
 }
 .contact .text {
@@ -656,9 +655,19 @@ Media Queries
 		object-fit: contain;
 	}
 
+	.projects .title {
+		margin-bottom: 2rem;
+		padding-left: 0;
+	}
+	.projects h2 {
+		font-size: 2rem;
+		font-weight: 700;
+		display: flex;
+		justify-content: flex-start;
+		text-align: start;
+	}
 	.projects .boxes {
 		padding: 1rem 0;
-
 		flex-wrap: wrap;
 	}
 	.projects .boxes .box {
