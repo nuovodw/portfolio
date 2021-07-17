@@ -5,8 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Daniel Won | Front End Developer</title>
-		<link rel="stylesheet" href="./css/navbar.css" />
-		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/backup-style.css" />
 
 		<!-- fontawesome -->
 		<link
@@ -15,39 +14,41 @@
 		/>
 	</head>
 	<body>
-		<div class="body-container">
-			<header>
-				<nav>
-					<input type="text" />
-					<div class="navbar">
-						<ul class="menu">
-							<li><a href="#home">home</a></li>
-							<li><a href="#about">about</a></li>
-							<li><a href="#projects">projects</a></li>
-							<li><a href="#contact">contact</a></li>
-							<div class="cancel-btn">
-								<i class="fas fa-times"></i>
-							</div>
-						</ul>
-						<div class="media-icons">
-							<a href="https://www.linkedin.com/in/danjwon/" target="_blank"
-								><i class="fab fa-linkedin"></i
-							></a>
-							<a href="https://github.com/nuovodw" target="_blank"
-								><i class="fab fa-github"></i
-							></a>
-							<a href="https://twitter.com/nuovodw" target="_blank"
-								><i class="fab fa-twitter"></i
-							></a>
-						</div>
-					</div>
-					<div class="menu-btn hamburger">
-						<i class="fas fa-bars"></i>
-					</div>
-				</nav>
-			</header>
+		<header>
+			<nav>
+				<input id="nav-toggle" type="checkbox" />
+				<div class="navbar logo"></div>
+				<ul class="menu links">
+					<li><a href="#home">home</a></li>
+					<li><a href="#about">about</a></li>
+					<li><a href="#projects">projects</a></li>
+					<li><a href="#contact">contact</a></li>
+				</ul>
+				<label for="nav-toggle" class="icon-burger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</label>
+				<!-- <div class="media-icons">
+					<a href="https://www.linkedin.com/in/danjwon/" target="_blank"
+						><i class="fab fa-linkedin"></i
+					></a>
+					<a href="https://github.com/nuovodw" target="_blank"
+						><i class="fab fa-github"></i
+					></a>
+					<a href="https://twitter.com/nuovodw" target="_blank"
+						><i class="fab fa-twitter"></i
+					></a>
+				</div> -->
 
-			<!-- Home Section -->
+				<!-- <div class="menu-btn hamburger">
+					<i class="fas fa-bars"></i>
+				</div> -->
+			</nav>
+		</header>
+
+		<main>
+			<!-- Home -->
 			<section class="home" id="home">
 				<div class="home-content center-text">
 					<div class="text">
@@ -60,7 +61,7 @@
 				</div>
 			</section>
 
-			<!-- About Section -->
+			<!-- About -->
 			<section class="about" id="about">
 				<div class="content">
 					<div class="title section-title">
@@ -114,7 +115,6 @@
 											aria-hidden="true"
 											style="transform: translate(0px, 0px); opacity: 1"
 										></i>
-
 										<i
 											class="fab fa-js tech-icon"
 											aria-hidden="true"
@@ -143,8 +143,9 @@
 				</div>
 			</section>
 
-			<!-- Projects Section -->
+			<!-- Projects -->
 			<section class="projects" id="projects">
+				<h2>Featured Projects</h2>
 				<div class="content">
 					<div class="title section-title"><h2>Projects</h2></div>
 					<div class="boxes">
@@ -212,7 +213,6 @@
 								</div>
 							</div>
 						</div>
-
 						<!-- project 2 -->
 						<div class="box box-2 center-text">
 							<div class="top-half">
@@ -267,7 +267,6 @@
 								</div>
 							</div>
 						</div>
-
 						<!-- project 3 -->
 						<div class="box box-3 center-text">
 							<div class="top-half">
@@ -325,7 +324,7 @@
 				</div>
 			</section>
 
-			<!-- Contact Me Section -->
+			<!-- Contact -->
 			<section class="contact" id="contact">
 				<div class="content">
 					<div class="title section-title"><h2>Contact</h2></div>
@@ -343,25 +342,26 @@
 					</div>
 				</div>
 			</section>
-			<!-- Footer Section -->
-			<footer class="center-text">
-				<div class="text">
-					<span id="footer-text">© 2021 Daniel Won</span>
-				</div>
-				<div class="media-icons">
-					<a href="https://www.linkedin.com/in/danjwon/" target="_blank"
-						><i class="fab fa-linkedin"></i
-					></a>
-					<a href="https://github.com/nuovodw" target="_blank"
-						><i class="fab fa-github"></i
-					></a>
-					<a href="https://twitter.com/nuovodw" target="_blank"
-						><i class="fab fa-twitter"></i
-					></a>
-				</div>
-			</footer>
-			<!-- <script src="navbar.js"></script>
-			<script src="projects.js"></script> -->
-		</div>
+		</main>
+
+		<!-- Footer Section -->
+		<footer class="center-text">
+			<div class="text">
+				<span id="footer-text">© 2021 Daniel Won</span>
+			</div>
+			<div class="media-icons">
+				<a href="https://www.linkedin.com/in/danjwon/" target="_blank"
+					><i class="fab fa-linkedin"></i
+				></a>
+				<a href="https://github.com/nuovodw" target="_blank"
+					><i class="fab fa-github"></i
+				></a>
+				<a href="https://twitter.com/nuovodw" target="_blank"
+					><i class="fab fa-twitter"></i
+				></a>
+			</div>
+		</footer>
+		<!-- <script src="navbar.js"></script> -->
+		<script src="projects.js"></script>
 	</body>
 </html>

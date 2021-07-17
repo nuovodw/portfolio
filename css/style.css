@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-	--background-color-primary: #171717;
 	--font-color-primary: #fff;
+
+	/* background color */
+	--background-color-primary: #171717;
+	--background-color-navbar: #171717;
 }
 
 html {
@@ -39,5 +42,117 @@ ul {
 	border: 0;
 	box-sizing: border-box;
 	text-decoration: none;
+	list-style: none;
 	scroll-behavior: smooth;
+}
+
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 0 5%;
+	height: 100px;
+	background: var(--background-color-navbar);
+}
+nav .logo {
+	display: flex;
+	float: none;
+	width: auto;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	color: #fff;
+}
+
+nav .links {
+	float: none;
+	position: fixed;
+	z-index: 9;
+	left: 0;
+	right: 0;
+	top: 100px;
+	bottom: 100%;
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	background: var(--background-color-navbar);
+	overflow: hidden;
+	transition: all 0.5s ease-in-out;
+}
+nav .links a {
+	display: block;
+	padding: 1em;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+}
+nav :checked ~ .links {
+	bottom: 0;
+}
+#nav-toggle {
+	position: absolute;
+	top: -100%;
+}
+nav .icon-burger {
+	display: block;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all 0.5s ease-in-out;
+}
+nav :checked ~ .icon-burger .line:nth-child(1) {
+	transform: translateY(10px) rotate(-45deg);
+}
+nav :checked ~ .icon-burger .line:nth-child(3) {
+	transform: translateY(-10px) rotate(45deg);
+}
+nav :checked ~ .icon-burger .line:nth-child(2) {
+	opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+	nav {
+		z-index: 10;
+	}
+	nav .logo {
+		float: left;
+		width: 40%;
+		height: 100%;
+	}
+	nav .links {
+		float: right;
+		position: static;
+		z-index: 5;
+		left: unset;
+		padding: 0;
+		margin: 0;
+		width: 60%;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		background: var(--background-color-navbar);
+	}
+
+	nav .links a {
+		font-size: 20px;
+	}
+	nav .icon-burger {
+		display: none;
+	}
 }
