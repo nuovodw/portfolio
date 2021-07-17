@@ -149,7 +149,7 @@ nav {
 	right: 0;
 	top: 0;
 	padding: 0 5%;
-	height: 100px;
+	height: 3rem;
 	background: var(--background-primary);
 }
 nav .logo {
@@ -166,10 +166,10 @@ nav .logo {
 nav .links {
 	float: none;
 	position: fixed;
-	z-index: 9;
+	z-index: 0;
 	left: 0;
 	right: 0;
-	top: 100px;
+	top: 3rem;
 	bottom: 100%;
 	width: auto;
 	height: auto;
@@ -192,6 +192,7 @@ nav :checked ~ .links {
 	bottom: 0;
 }
 #nav-toggle {
+	z-index: 1000;
 	position: absolute;
 	top: -100%;
 }
