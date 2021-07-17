@@ -388,7 +388,6 @@ About
 
 .about .left img {
 	width: auto;
-
 	object-fit: contain;
 }
 
@@ -474,22 +473,24 @@ Projects
 .project-links-container {
 	display: flex;
 	justify-content: space-evenly;
+	margin-top: 1rem;
 }
-.project-links-container span,
-.project-links-container a:first-of-type {
-	border-right: 1px solid var(--project-border);
-}
+
 .project-links-container a,
 .project-links-container span {
 	font-size: 1rem;
 	padding: 0.3rem 1rem;
-	border-top: 1px solid var(--project-border);
-	/* border-bottom: 1px solid var(--project-border); */
 	width: 50%;
 	text-align: center;
+	border: 1px solid var(--button-border);
 	cursor: pointer;
 	transition: all 0.4s ease;
 }
+.project-links-container a {
+	margin-left: 0.5rem;
+}
+
+.project-links-container .description:hover,
 .project-links-container a:hover {
 	background-color: var(--button-background-hover);
 	color: var(--button-fc-hover);
@@ -600,57 +601,6 @@ Media Queries
 	h2 {
 		font-size: 2.7rem;
 	}
-
-	/* nav {
-		position: fixed;
-		left: 50%;
-		transform: translateX(-50%);
-		max-width: 70.5 rem;
-	} */
-	/* nav .navbar {
-		width: 90%;
-		height: 40px;
-	}
-	nav .navbar .menu {
-		display: flex;
-		position: fixed;
-		left: -110%;
-		top: 0;
-		background: var(--background-primary);
-		height: 100vh;
-		max-width: 100vw;
-		width: 100%;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		transition: all 0.5s ease;
-	}
-
-	.navbar.active .menu {
-		left: 0;
-		padding-bottom: 41px;
-	}
-	nav .navbar .menu li {
-		margin: 0;
-	}
-	nav .navbar .menu a {
-		font-size: 1.7rem;
-		display: block;
-		color: var(--white);
-		margin: 10px 0;
-		letter-spacing: -0.025rem;
-	}
-
-	nav.sticky .menu a:hover {
-		color: var(--fc-secondary);
-	}
-	nav .navbar .media-icons {
-		display: none;
-	}
-	nav .menu-btn,
-	.navbar .menu .cancel-btn {
-		display: block;
-	} */
 
 	.about .about-details {
 		flex-direction: column;
