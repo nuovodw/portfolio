@@ -236,39 +236,6 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 	opacity: 0;
 }
 
-@media screen and (min-width: 768px) {
-	nav {
-		z-index: 10;
-	}
-	nav .logo {
-		float: left;
-		width: 40%;
-		height: 100%;
-	}
-	nav .links {
-		float: right;
-		position: static;
-		z-index: 5;
-		left: unset;
-		padding: 0;
-		margin: 0;
-		width: 60%;
-		height: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-		background: var(--background-primary);
-	}
-
-	nav .links a {
-		font-size: 20px;
-	}
-	nav .icon-burger {
-		display: none;
-	}
-}
-
 nav ul a {
 	font-size: 1.3rem;
 	font-weight: 300;
@@ -279,22 +246,66 @@ nav ul a:hover {
 	color: var(--regular-menu);
 }
 
-.navbar .media-icons a {
-	color: var(--logo);
-	font-size: 1.5rem;
-	margin: 0 10px;
-	transition: all 0.4s ease;
+li.media-icons {
+	display: flex;
+	justify-content: center;
 }
+
+li.media-icons a {
+	margin-top: 2.3rem;
+	font-size: 1.5rem;
+	margin-left: 0.2rem;
+	/* margin-bottom: 0.6rem; */
+}
+li.media-icons a:nth-child(1) {
+	margin-left: 2.5rem;
+}
+
 .navbar .media-icons a:hover {
 	color: var(--regular-menu);
 }
 
-nav.sticky .media-icons a {
-	color: var(--logo);
+@media screen and (min-width: 768px) {
+	nav {
+		display: flex;
+		justify-content: flex-end;
+		z-index: 10;
+	}
+
+	nav .links {
+		position: static;
+		z-index: 5;
+		left: unset;
+		padding: 0;
+		margin: 0;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		background: var(--background-primary);
+	}
+
+	nav .links a {
+		font-size: 1rem;
+		letter-spacing: 0;
+	}
+	nav .links .link-number {
+		display: none;
+	}
+	nav .icon-burger {
+		display: none;
+	}
+
+	li.media-icons a {
+		margin-top: 0;
+		margin-left: 0.5rem;
+		margin-bottom: 0.6rem;
+	}
+	li.media-icons a:nth-child(1) {
+		margin-left: 2.5rem;
+	}
 }
-*/
-
-
 
 /*********** 
 Hero
