@@ -2,6 +2,7 @@
 
 :root {
 	--background-primary: #171717;
+	--background-nav: #171717d8;
 
 	--background-secondary: rgba(31, 31, 31, 0.97);
 	--backgroun-light: rgb(49, 49, 49);
@@ -149,7 +150,12 @@ nav {
 	right: 0;
 	top: 0;
 	padding: 0 5%;
-	height: 3rem;
+	height: 3.5rem;
+	background: var(--background-nav);
+	/* backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px); */
+}
+nav::after {
 	background: var(--background-primary);
 }
 nav .logo {
@@ -169,24 +175,33 @@ nav .links {
 	z-index: 0;
 	left: 0;
 	right: 0;
-	top: 3rem;
+	top: 0;
 	bottom: 100%;
 	width: auto;
 	height: auto;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	background: var(--background-primary);
+	justify-content: center;
+	align-items: flex-start;
+	background: #000;
 	overflow: hidden;
 	transition: all 0.5s ease-in-out;
 }
 nav .links a {
 	display: block;
-	padding: 1em;
-	font-size: 16px;
+	letter-spacing: -0.11rem;
+	margin: 0 1rem 0.6rem 2.5rem;
+	font-size: 2.5rem;
 	font-weight: bold;
 	color: #fff;
+}
+
+nav .links .link-number {
+	font-size: 1rem;
+	color: var(--fc-secondary);
+}
+nav .links .link-name {
+	padding-top: 0;
 }
 nav :checked ~ .links {
 	bottom: 0;
@@ -204,18 +219,18 @@ nav .icon-burger {
 	transform: translateY(-50%);
 }
 nav .icon-burger .line {
-	width: 30px;
-	height: 5px;
+	width: 23px;
+	height: 3px;
 	background-color: #fff;
 	margin: 5px;
 	border-radius: 3px;
 	transition: all 0.5s ease-in-out;
 }
 nav :checked ~ .icon-burger .line:nth-child(1) {
-	transform: translateY(10px) rotate(-45deg);
+	transform: translateY(8px) rotate(-45deg);
 }
 nav :checked ~ .icon-burger .line:nth-child(3) {
-	transform: translateY(-10px) rotate(45deg);
+	transform: translateY(-8px) rotate(45deg);
 }
 nav :checked ~ .icon-burger .line:nth-child(2) {
 	opacity: 0;
@@ -253,34 +268,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 		display: none;
 	}
 }
-/* nav {
-	position: fixed;
-	left: 50%;
-	transform: translateX(-50%);
-	max-width: 70.5 rem;
-	padding: 20px 0;
-	z-index: 999;
-	transition: all 0.3s ease;
-} */
-/* nav.sticky {
-	background: var(--background-secondary);
-	padding: 13px 0;
-} */
-/* nav .navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: auto;
-} */
 
-/* nav .navbar .menu {
-	display: flex;
-	position: relative;
-} */
-/* nav .navbar .menu li {
-	list-style: none;
-	margin-right: 40px;
-} */
 nav ul a {
 	font-size: 1.3rem;
 	font-weight: 300;
@@ -306,30 +294,7 @@ nav.sticky .media-icons a {
 }
 */
 
-/*********** 
-Menu Button 
-************/
-/* .menu-btn.hamburger {
-	font-size: 2rem;
-}
-.fas-bars {
-	margin-bottom: 5px;
-}
 
-nav .menu-btn,
-.navbar .menu .cancel-btn {
-	position: absolute;
-	color: var(--white);
-	right: 30px;
-	top: 10px;
-	font-size: 2rem;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	display: none;
-}
-nav .menu-btn {
-	color: var(--menu-button);
-}
 
 /*********** 
 Hero
