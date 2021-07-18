@@ -206,6 +206,7 @@ nav .links .link-name {
 nav :checked ~ .links {
 	bottom: 0;
 }
+
 #nav-toggle {
 	z-index: 1000;
 	position: absolute;
@@ -668,7 +669,7 @@ Media Queries
 		padding-left: 0;
 	}
 	.projects h2 {
-		font-size: 2rem;
+		font-size: 2.5rem;
 		font-weight: 700;
 		display: flex;
 		justify-content: flex-start;
