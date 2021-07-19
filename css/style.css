@@ -615,6 +615,11 @@ Media Queries
 	.about-details .right {
 		padding-left: 0;
 	}
+	.about .left img {
+		width: 18rem;
+		height: auto;
+		object-fit: contain;
+	}
 	.about-details .topic {
 		margin-bottom: 0;
 	}
@@ -663,11 +668,11 @@ Media Queries
 	h2 {
 		font-size: 2.5rem;
 	}
-	.about .left img {
+	/* .about .left img {
 		width: 18rem;
 		height: auto;
 		object-fit: contain;
-	}
+	} */
 
 	.projects .boxes {
 		padding: 0 1rem;
@@ -685,10 +690,35 @@ Media Queries
 	}
 }
 
-@media (max-width: 475px) {
+/* @media (max-width: 475px) {
 	.about .left img {
 		width: 100%;
 		height: auto;
+	}
+
+	footer .text span,
+	footer .media-icons a {
+		font-size: 1rem;
+	}
+} */
+
+@media (max-width: 370px) {
+	.about i.tech-icon {
+		font-size: 1.2rem;
+		color: var(--fc-primary);
+		/* color: var(--fc-secondary); */
+		padding: 0 0.5rem;
+	}
+	i.tech-icon:first-child {
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 280px) {
+	section .button button {
+		width: 9rem;
+		padding: 0.3rem 1rem;
+		font-size: 1rem;
 	}
 
 	.about i.tech-icon {
@@ -699,19 +729,6 @@ Media Queries
 	}
 	i.tech-icon:first-child {
 		padding-left: 0;
-	}
-
-	footer .text span,
-	footer .media-icons a {
-		font-size: 1rem;
-	}
-}
-
-@media (max-width: 280px) {
-	section .button button {
-		width: 9rem;
-		padding: 0.3rem 1rem;
-		font-size: 1rem;
 	}
 
 	.project-links-container a,
