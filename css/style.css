@@ -683,28 +683,15 @@ Media Queries
 	.projects .boxes .box-3 {
 		margin-top: 2rem;
 	}
-
-	.contact .text {
-		width: 100%;
-	}
 }
 
 @media (max-width: 475px) {
-	section .button button {
-		width: 9rem;
-		padding: 0.3rem 1rem;
-		font-size: 1rem;
-	}
-
-	.about .about-container {
-		width: 95%;
-	}
 	.about .left img {
 		width: 100%;
 		height: auto;
 	}
 
-	i.tech-icon {
+	.about i.tech-icon {
 		font-size: 1.2rem;
 		color: var(--fc-primary);
 		/* color: var(--fc-secondary); */
@@ -714,6 +701,19 @@ Media Queries
 		padding-left: 0;
 	}
 
+	footer .text span,
+	footer .media-icons a {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 280px) {
+	section .button button {
+		width: 9rem;
+		padding: 0.3rem 1rem;
+		font-size: 1rem;
+	}
+
 	.project-links-container a,
 	.project-links-container span {
 		font-size: 0.7rem;
@@ -721,10 +721,7 @@ Media Queries
 		width: 50%;
 		text-align: center;
 	}
-	footer .text span,
-	footer .media-icons a {
-		font-size: 1rem;
-	}
+
 	h1 {
 		font-size: 2.65rem;
 	}
