@@ -469,6 +469,24 @@ Projects
 	z-index: 2;
 }
 
+.box-4 .image-container {
+	margin: 0;
+	border-bottom: none;
+	position: relative;
+}
+.box-4 .image-container::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/* margin: 0; */
+	background: #2042d87c;
+	/* overflow: hidden; */
+	/* z-index: ; */
+}
+
 .box img {
 	max-width: 100%;
 	height: auto;
@@ -508,12 +526,14 @@ Projects
 }
 .project-1-description,
 .project-2-description,
-.project-3-description {
+.project-3-description,
+.project-4-description {
 	display: none;
 }
 .project-1-description.open,
 .project-2-description.open,
-.project-3-description.open {
+.project-3-description.open,
+.project-4-description.open {
 	display: inline;
 }
 
