@@ -1,5 +1,6 @@
 'use strict';
 
+// nav bar
 const checkbox = document.querySelector("input[type='checkbox']");
 const navList = document.querySelectorAll('.nav-link');
 
@@ -9,6 +10,7 @@ navList.forEach((navLink) => {
 	});
 });
 
+// project descriptions
 const openDescription1 = document.querySelector('#description-1');
 const openDescription2 = document.querySelector('#description-2');
 const openDescription3 = document.querySelector('#description-3');
