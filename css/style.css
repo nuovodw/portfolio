@@ -337,10 +337,7 @@ h2.job-title {
 .home .button {
 	margin: 3rem 1rem;
 }
-.home .contact-button {
-	border: none;
-	background-color: #7c6dae;
-}
+
 
 /*********** 
 About
@@ -491,7 +488,7 @@ Projects
 	background: #7c6daebd;
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(3px);
-	-webkit-backdrop-filter: blur(3px);
+	/* -webkit-backdrop-filter: blur(3px); */
 }
 .box-2 .image-container::before {
 	background: #fbde8ec7;
@@ -757,18 +754,18 @@ Media Queries
 		padding: 0.7rem 1rem;
 		font-size: 1rem;
 	}
-}
-/* @media (max-width: 475px) {
-	.about .left img {
+
+@media (max-width: 475px) {
+	/* .about .left img {
 		width: 100%;
 		height: auto;
-	}
+	} */
 
 	footer .text span,
 	footer .media-icons a {
 		font-size: 1rem;
 	}
-} */
+}
 
 @media (max-width: 370px) {
 	.about i.tech-icon {
@@ -780,7 +777,8 @@ Media Queries
 	i.tech-icon:first-child {
 		padding-left: 0;
 	}
-}
+
+
 
 @media (max-width: 280px) {
 	section .button button {
@@ -806,6 +804,12 @@ Media Queries
 		width: 50%;
 		text-align: center;
 	}
+
+	footer .text span,
+	footer .media-icons a {
+		font-size: 0.75rem;
+	}
+}
 
 	h1 {
 		font-size: 2.65rem;
