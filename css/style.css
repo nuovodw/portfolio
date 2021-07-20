@@ -109,7 +109,7 @@ h4 {
 
 section .button button {
 	width: 14rem;
-	padding: 0.7rem 1rem;
+	padding: 1.15rem 1rem;
 	font-size: 1.3rem;
 	font-weight: 300;
 	text-transform: capitalize;
@@ -117,6 +117,7 @@ section .button button {
 	color: var(--fc-primary);
 	cursor: pointer;
 	border: 1px solid var(--button-border);
+	border-radius: 50px;
 
 	transition: all 0.4s ease;
 }
@@ -329,8 +330,16 @@ h2.job-title {
 	margin-top: 1rem;
 }
 
+.home .home-buttons {
+	display: flex;
+	justify-content: center;
+}
 .home .button {
-	margin: 40px 0;
+	margin: 3rem 1rem;
+}
+.home .contact-button {
+	border: none;
+	background-color: #7c6dae;
 }
 
 /*********** 
@@ -479,17 +488,43 @@ Projects
 	/* background: #1bb476ce; */
 }
 .box-1 .image-container::before {
+	background: #7c6daebd;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+}
+.box-2 .image-container::before {
+	background: #fbde8ec7;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+}
+.box-3 .image-container::before {
+	background: #7aa06f4f;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+}
+.box-4 .image-container::before {
+	background: #e3925f6c;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+}
+
+/* optional color pattern */
+/* .box-1 .image-container::before {
 	background: #0b43dcef;
 }
 .box-2 .image-container::before {
 	background: #1bb477ef;
 }
 .box-3 .image-container::before {
-	background: #fece40e7;
+	background: #fef335e7;
 }
 .box-4 .image-container::before {
 	background: #ff4617ef;
-}
+} */
 
 .box img {
 	max-width: 100%;
@@ -692,6 +727,7 @@ Media Queries
 	h2 {
 		font-size: 2.5rem;
 	}
+
 	/* .about .left img {
 		width: 18rem;
 		height: auto;
@@ -715,6 +751,13 @@ Media Queries
 	}
 }
 
+@media (max-width: 576px) {
+	section .button button {
+		width: 10rem;
+		padding: 0.7rem 1rem;
+		font-size: 1rem;
+	}
+}
 /* @media (max-width: 475px) {
 	.about .left img {
 		width: 100%;
