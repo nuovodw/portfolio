@@ -488,7 +488,7 @@ Projects
 	background: #7c6daebd;
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(3px);
-	/* -webkit-backdrop-filter: blur(3px); */
+	-webkit-backdrop-filter: blur(3px);
 }
 .box-2 .image-container::before {
 	background: #fbde8ec7;
