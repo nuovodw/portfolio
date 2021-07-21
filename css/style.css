@@ -73,9 +73,16 @@ body {
 	/* width: min(90%, 70.5rem); */
 }
 
-section .section-container {
+section,
+footer {
+	margin: 0 auto;
+	width: 98%;
+}
+section .section-container,
+footer .section-container {
 	width: min(90%, 70.5rem);
 	margin: 0 auto;
+	padding: 6rem 1rem;
 }
 
 h1,
@@ -357,7 +364,6 @@ About
 	flex-direction: column;
 	justify-content: center;
 	margin-bottom: 4rem;
-	padding: 1rem;
 }
 
 .about .about-details {
@@ -491,7 +497,7 @@ Projects
 
 .project-links-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: start;
 	margin-top: 1rem;
 }
 
@@ -499,7 +505,7 @@ Projects
 .project-links-container span {
 	font-size: 1rem;
 	padding: 0.3rem 1rem;
-	width: 11rem;
+	width: 5rem;
 	text-align: center;
 	border: 1px solid var(--button-border);
 	border-radius: 25px;
@@ -507,7 +513,7 @@ Projects
 	transition: all 0.4s ease;
 }
 .project-links-container a {
-	margin-left: 0.5rem;
+	margin-right: 0.5rem;
 }
 
 .project-links-container .description:hover,
@@ -520,12 +526,12 @@ Projects
 	text-align: left;
 	padding: 0 0.8rem 0 0.8rem;
 }
-.project-1-description,
+/* .project-1-description,
 .project-2-description,
 .project-3-description,
 .project-4-description {
 	display: none;
-}
+} */
 .project-1-description.open,
 .project-2-description.open,
 .project-3-description.open,
@@ -546,22 +552,25 @@ Projects
 
 .tools-container {
 	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	padding-top: 2.5rem;
-	padding-bottom: 2rem;
+	/* justify-content: space-evenly; */
+	align-items: flex-start;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 i.tool-icon {
 	font-size: 1.5rem;
+	padding-right: 2rem;
 }
 .fab {
-	font-weight: 400;
+	font-weight: 300;
 }
 
 /*********** 
 Contact Me 
 ************/
-
+.contact {
+	background: var(--background-color-section);
+}
 .contact .content {
 	display: flex;
 	flex-direction: column;
@@ -675,8 +684,8 @@ Media Queries
 }
 
 @media (max-width: 768px) {
-	body {
-		width: 95%;
+	section .section-container {
+		padding: 8rem 0;
 	}
 	h1 {
 		font-size: 3rem;
@@ -692,19 +701,23 @@ Media Queries
 	} */
 
 	.projects .boxes {
-		padding: 0 1rem;
+		padding: 0;
 		flex-wrap: wrap;
 	}
 	.projects .boxes .box {
 		width: 100%;
 	}
 	.projects .boxes .box-1 {
+		margin: 0;
 		margin-top: 0;
 	}
 	.projects .boxes .box-2,
 	.projects .boxes .box-3,
 	.projects .boxes .box-4 {
 		margin-top: 3rem;
+	}
+	.projects h2 {
+		padding-left: 0;
 	}
 }
 
