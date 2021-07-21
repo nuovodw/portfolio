@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-	--background-primary: #171717;
+	/* --background-primary: #171717; */
+	--background-primary: #ffffff;
 	--background-nav: #121212d8;
 
 	--background-secondary: rgba(31, 31, 31, 0.97);
@@ -9,11 +10,11 @@
 	--background-dark: #1a1c23;
 	--box-background: #23252f;
 
-	--fc-primary: #ffffff;
+	--fc-primary: #000000;
 	--fc-secondary: #b9b9b9;
 	--logo: #ffffff;
-	--button-background: #191919;
-	--button-background-hover: #ffffff;
+	--button-background: #ffffff;
+	--button-background-hover: #090c2b;
 	--button-fc-hover: #191919;
 	--button-border: rgb(199, 199, 199);
 	--project-border: #ffffff;
@@ -322,6 +323,7 @@ Hero
 .home h2 {
 	font-weight: 600;
 	letter-spacing: -0.15rem;
+	text-transform: uppercase;
 
 	color: var(--fc-secondary);
 }
@@ -337,7 +339,6 @@ h2.job-title {
 .home .button {
 	margin: 3rem 1rem;
 }
-
 
 /*********** 
 About
@@ -461,6 +462,14 @@ Projects
 	cursor: default;
 	transition: all 0.4s ease;
 }
+.projects .boxes .box-1,
+.projects .boxes .box-3 {
+	margin-right: 0.5rem;
+}
+.projects .boxes .box-3,
+.projects .boxes .box-4 {
+	margin-top: 3rem;
+}
 
 .projects .top-half {
 	display: flex;
@@ -472,56 +481,9 @@ Projects
 	border-bottom: none;
 	position: relative;
 	overflow: hidden;
-	z-index: 2;
+	/* z-index: 2; */
+	transition: all 0.4s ease;
 }
-
-.box .image-container::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	/* background: #1bb476ce; */
-}
-.box-1 .image-container::before {
-	background: #7c6daebd;
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(3px);
-	-webkit-backdrop-filter: blur(3px);
-}
-.box-2 .image-container::before {
-	background: #fbde8ec7;
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(3px);
-	-webkit-backdrop-filter: blur(3px);
-}
-.box-3 .image-container::before {
-	background: #7aa06f4f;
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(3px);
-	-webkit-backdrop-filter: blur(3px);
-}
-.box-4 .image-container::before {
-	background: #e3925f6c;
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(3px);
-	-webkit-backdrop-filter: blur(3px);
-}
-
-/* optional color pattern */
-/* .box-1 .image-container::before {
-	background: #0b43dcef;
-}
-.box-2 .image-container::before {
-	background: #1bb477ef;
-}
-.box-3 .image-container::before {
-	background: #fef335e7;
-}
-.box-4 .image-container::before {
-	background: #ff4617ef;
-} */
 
 .box img {
 	max-width: 100%;
@@ -532,7 +494,7 @@ Projects
 
 .project-links-container {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	margin-top: 1rem;
 }
 
@@ -540,9 +502,10 @@ Projects
 .project-links-container span {
 	font-size: 1rem;
 	padding: 0.3rem 1rem;
-	width: 50%;
+	width: 11rem;
 	text-align: center;
 	border: 1px solid var(--button-border);
+	border-radius: 25px;
 	cursor: pointer;
 	transition: all 0.4s ease;
 }
@@ -754,6 +717,7 @@ Media Queries
 		padding: 0.7rem 1rem;
 		font-size: 1rem;
 	}
+}
 
 @media (max-width: 475px) {
 	/* .about .left img {
@@ -778,38 +742,36 @@ Media Queries
 		padding-left: 0;
 	}
 
+	@media (max-width: 280px) {
+		section .button button {
+			width: 9rem;
+			padding: 0.3rem 1rem;
+			font-size: 1rem;
+		}
 
+		.about i.tech-icon {
+			font-size: 1.2rem;
+			color: var(--fc-primary);
+			/* color: var(--fc-secondary); */
+			padding: 0 0.5rem;
+		}
+		i.tech-icon:first-child {
+			padding-left: 0;
+		}
 
-@media (max-width: 280px) {
-	section .button button {
-		width: 9rem;
-		padding: 0.3rem 1rem;
-		font-size: 1rem;
-	}
+		.project-links-container a,
+		.project-links-container span {
+			font-size: 0.7rem;
+			padding: 0.3rem 1rem;
+			width: 50%;
+			text-align: center;
+		}
 
-	.about i.tech-icon {
-		font-size: 1.2rem;
-		color: var(--fc-primary);
-		/* color: var(--fc-secondary); */
-		padding: 0 0.5rem;
+		footer .text span,
+		footer .media-icons a {
+			font-size: 0.75rem;
+		}
 	}
-	i.tech-icon:first-child {
-		padding-left: 0;
-	}
-
-	.project-links-container a,
-	.project-links-container span {
-		font-size: 0.7rem;
-		padding: 0.3rem 1rem;
-		width: 50%;
-		text-align: center;
-	}
-
-	footer .text span,
-	footer .media-icons a {
-		font-size: 0.75rem;
-	}
-}
 
 	h1 {
 		font-size: 2.65rem;
@@ -826,4 +788,9 @@ Media Queries
 	.contact p {
 		font-size: 1.3rem;
 	}
+}
+
+/* add tomorrow */
+.topic h3 {
+	font-weight: 300;
 }
