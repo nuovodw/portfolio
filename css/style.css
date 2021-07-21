@@ -5,26 +5,20 @@
 	--background-primary: #ffffff;
 	--background-nav: #121212d8;
 
-	--background-secondary: rgba(31, 31, 31, 0.97);
-	--backgroun-light: rgb(49, 49, 49);
-	--background-dark: #1a1c23;
-	--box-background: #23252f;
+	--background-color-section: #e0e6d0;
 
 	--fc-primary: #000000;
-	--fc-secondary: #b9b9b9;
+	--fc-secondary: #797979;
 	--logo: #ffffff;
 	--button-background: #ffffff;
-	--button-background-hover: #090c2b;
+	--button-background-hover: rgb(240, 240, 240);
 	--button-fc-hover: #191919;
 	--button-border: rgb(199, 199, 199);
 	--project-border: #ffffff;
-	--scroll-up-arrow: #b298ff;
-	--side-menu: #6d59a8;
+
 	--regular-menu: #b4b4b4;
 
-	--pr-color: #5c82a6;
 	--black: #0e2431;
-	--menu-button: #fff;
 
 	--ff-primary: 'Poppins', sans-serif;
 }
@@ -76,7 +70,12 @@ body {
 	font-size: 1.1rem;
 	line-height: 1.4;
 	margin: 0 auto;
+	/* width: min(90%, 70.5rem); */
+}
+
+section .section-container {
 	width: min(90%, 70.5rem);
+	margin: 0 auto;
 }
 
 h1,
@@ -117,7 +116,7 @@ section .button button {
 	background-color: var(--button-background);
 	color: var(--fc-primary);
 	cursor: pointer;
-	border: 1px solid var(--button-border);
+	border: 2px solid var(--button-border);
 	border-radius: 50px;
 
 	transition: all 0.4s ease;
@@ -125,6 +124,7 @@ section .button button {
 section .button button:hover {
 	background-color: var(--button-background-hover);
 	color: var(--button-fc-hover);
+	border: 2px solid var(--button-background-hover);
 }
 
 a,
@@ -319,6 +319,9 @@ Hero
 	padding-top: 4.375rem;
 	padding-bottom: 5.9375rem;
 }
+.home h1 {
+	font-weight: 700;
+}
 
 .home h2 {
 	font-weight: 600;
@@ -346,11 +349,9 @@ About
 .about {
 	display: flex;
 	flex-direction: column;
+	background: var(--background-color-section);
 }
-/* .about .content {
-	display: flex;
-	flex-direction: column;
-} */
+
 .about-container {
 	display: flex;
 	flex-direction: column;
@@ -358,10 +359,6 @@ About
 	margin-bottom: 4rem;
 	padding: 1rem;
 }
-
-/* .about .title h2 {
-	visibility: hidden;
-} */
 
 .about .about-details {
 	display: flex;
@@ -623,9 +620,9 @@ Media Queries
 *******************/
 
 @media (max-width: 992px) {
-	body {
+	/* body {
 		width: 75%;
-	}
+	} */
 	.about .about-details {
 		display: flex;
 		flex-direction: column;
@@ -788,9 +785,4 @@ Media Queries
 	.contact p {
 		font-size: 1.3rem;
 	}
-}
-
-/* add tomorrow */
-.topic h3 {
-	font-weight: 300;
 }
