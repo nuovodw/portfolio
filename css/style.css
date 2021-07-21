@@ -3,7 +3,7 @@
 :root {
 	/* --background-primary: #171717; */
 	--background-primary: #ffffff;
-	--background-nav: #121212d8;
+	--background-nav: #ffffffd8;
 
 	--background-color-section: #e0e6d0;
 
@@ -223,16 +223,18 @@ nav .icon-burger {
 nav .icon-burger .line {
 	width: 23px;
 	height: 3px;
-	background-color: #fff;
+	background-color: var(--fc-primary);
 	margin: 5px;
 	border-radius: 3px;
 	transition: all 0.5s ease-in-out;
 }
 nav :checked ~ .icon-burger .line:nth-child(1) {
 	transform: translateY(8px) rotate(-45deg);
+	background-color: #fff;
 }
 nav :checked ~ .icon-burger .line:nth-child(3) {
 	transform: translateY(-8px) rotate(45deg);
+	background-color: #fff;
 }
 nav :checked ~ .icon-burger .line:nth-child(2) {
 	opacity: 0;
