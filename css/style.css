@@ -4,6 +4,7 @@
 	/* --background-primary: #171717; */
 	--background-primary: #ffffff;
 	--background-nav: #ffffffd8;
+	--background-footer: #111;
 
 	/* --background-color-section: #e0e6d0; */
 	--background-color-section: #ddffdf;
@@ -131,7 +132,7 @@ section .button button {
 	border: 2px solid var(--button-border);
 	border-radius: 50px;
 
-	transition: all 0.4s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 section .button button:hover {
 	transform: scale(1.1);
@@ -512,7 +513,7 @@ Projects
 	border: 1px solid var(--button-border);
 	border-radius: 25px;
 	cursor: pointer;
-	transition: all 0.4s ease;
+	transition: all 0.2s ease;
 }
 .project-links-container a {
 	margin-right: 0.5rem;
@@ -520,8 +521,7 @@ Projects
 
 .project-links-container .description:hover,
 .project-links-container a:hover {
-	background-color: var(--button-background-hover);
-	color: var(--button-fc-hover);
+	transform: scale(1.1);
 }
 
 .project-description-container {
@@ -529,20 +529,7 @@ Projects
 	flex-direction: column;
 	align-items: flex-start;
 	text-align: left;
-	padding: 0 0.8rem 0 0.8rem;
 }
-/* .project-1-description,
-.project-2-description,
-.project-3-description,
-.project-4-description {
-	align-self: flex-end;
-} */
-/* .project-1-description.open,
-.project-2-description.open,
-.project-3-description.open,
-.project-4-description.open {
-	display: inline;
-} */
 
 .project-title {
 	font-size: 1.6rem;
@@ -564,7 +551,7 @@ Projects
 	padding-bottom: 1rem;
 }
 i.tool-icon {
-	/* font-size: 1.2rem; */
+	font-size: 1.2rem;
 	padding-right: 2rem;
 	color: var(--fc-secondary);
 }
@@ -578,7 +565,7 @@ Contact Me
 .contact .content {
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto 2rem;
+	margin: 0 auto;
 }
 .contact .title {
 	display: none;
@@ -602,12 +589,14 @@ Footer
 footer {
 	display: flex;
 	justify-content: center;
-	margin: 2rem auto;
-	margin-top: 7rem;
+	height: 6rem;
+	margin: 0 auto;
+	background: var(--background-color-section);
 }
 
 footer .text {
 	display: flex;
+	align-items: flex-start;
 	margin-right: 1rem;
 }
 footer .text span {
@@ -618,14 +607,15 @@ footer .text span {
 }
 footer .media-icons {
 	display: flex;
+	align-items: flex-start;
 }
 footer .media-icons a {
 	font-size: 1.3rem;
 	padding-right: 0.65rem;
-	transition: all 0.4s ease;
+	color: var(--fc-primary);
 }
 footer .media-icons a:hover {
-	color: var(--regular-menu);
+	color: rgb(219, 219, 219);
 }
 
 /******************* 
@@ -686,7 +676,7 @@ Media Queries
 
 @media (max-width: 768px) {
 	section .section-container {
-		padding: 8rem 0;
+		padding: 4rem 0;
 	}
 	h1 {
 		font-size: 3rem;
