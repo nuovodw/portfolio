@@ -9,16 +9,20 @@
 
 	--fc-primary: #000000;
 	--fc-secondary: #797979;
+	--fc-hover-primary: rgb(192, 192, 192);
+	--fc-hover-secondary: rgb(94, 94, 94);
+	--fc-white: #fff;
 	--logo: #ffffff;
 	--button-background: #ffffff;
 	--button-background-hover: rgb(240, 240, 240);
 	--button-fc-hover: #191919;
-	--button-border: rgb(199, 199, 199);
+	--button-border: rgb(0, 0, 0);
 	--project-border: #ffffff;
 
 	--regular-menu: #b4b4b4;
 
 	--black: #0e2431;
+	--white: #fff;
 
 	--ff-primary: 'Poppins', sans-serif;
 }
@@ -193,11 +197,14 @@ nav .links {
 }
 nav .links a {
 	display: block;
-	letter-spacing: -0.11rem;
+	letter-spacing: -0.07rem;
 	margin: 0 1rem 0.6rem 2.5rem;
 	font-size: 2.5rem;
 	font-weight: bold;
-	color: #fff;
+	color: var(--fc-white);
+}
+nav .links a:hover {
+	color: var(--background-color-section);
 }
 
 nav .links .nav-link {
@@ -240,16 +247,6 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 	opacity: 0;
 }
 
-nav ul a {
-	font-size: 1.3rem;
-	font-weight: 300;
-	text-transform: capitalize;
-	color: var(--white);
-}
-nav ul a:hover {
-	color: var(--regular-menu);
-}
-
 li.media-icons {
 	display: flex;
 	justify-content: center;
@@ -270,7 +267,7 @@ li.media-icons a:nth-child(1) {
 	color: var(--regular-menu);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
 	nav {
 		display: flex;
 		justify-content: flex-end;
@@ -293,8 +290,11 @@ li.media-icons a:nth-child(1) {
 	}
 
 	nav .links a {
-		font-size: 1rem;
-		letter-spacing: 0;
+		font-size: 1.4rem;
+		color: var(--fc-primary);
+	}
+	nav .links a:hover {
+		color: var(--fc-hover-secondary);
 	}
 	nav .links .link-number {
 		display: none;
