@@ -5,10 +5,11 @@
 	--background-primary: #ffffff;
 	--background-nav: #ffffffd8;
 
-	--background-color-section: #e0e6d0;
+	/* --background-color-section: #e0e6d0; */
+	--background-color-section: #ddffdf;
 
 	--fc-primary: #000000;
-	--fc-secondary: #797979;
+	--fc-secondary: #363636;
 	--fc-hover-primary: rgb(192, 192, 192);
 	--fc-hover-secondary: rgb(94, 94, 94);
 	--fc-white: #fff;
@@ -455,11 +456,11 @@ Projects
 
 .projects .boxes {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding: 1rem;
-
 	flex-wrap: wrap;
 }
+
 .projects .boxes .box {
 	margin-top: 1rem;
 	display: flex;
@@ -526,6 +527,9 @@ Projects
 }
 
 .project-description-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 	text-align: left;
 	padding: 0 0.8rem 0 0.8rem;
 }
@@ -533,17 +537,18 @@ Projects
 .project-2-description,
 .project-3-description,
 .project-4-description {
-	display: none;
+	align-self: flex-end;
 } */
-.project-1-description.open,
+/* .project-1-description.open,
 .project-2-description.open,
 .project-3-description.open,
 .project-4-description.open {
 	display: inline;
-}
+} */
 
 .project-title {
-	margin: 2rem auto;
+	font-size: 1.6rem;
+	margin: 2rem 0;
 	margin-bottom: 0.75rem;
 }
 .project-description {
@@ -551,6 +556,7 @@ Projects
 	color: var(--fc-secondary);
 	line-height: 1.4;
 	font-weight: 300;
+	overflow: hidden;
 }
 
 .tools-container {
