@@ -124,7 +124,7 @@ section .button button {
 	width: 12rem;
 	padding: 1.08rem 1rem;
 	font-size: 1.1rem;
-	font-weight: 300;
+	font-weight: 400;
 	text-transform: capitalize;
 	background-color: var(--button-background);
 	color: var(--fc-primary);
