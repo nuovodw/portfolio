@@ -20,7 +20,7 @@
 	--button-background: #ffffff;
 	--button-background-hover: rgb(240, 240, 240);
 	--button-fc-hover: #191919;
-	--button-border: rgb(0, 0, 0);
+	--button-border: #868a82;
 	--project-border: #ffffff;
 
 	--regular-menu: #b4b4b4;
@@ -394,6 +394,14 @@ About
 	color: var(--fc-secondary);
 	/* margin-bottom: 1.5rem; */
 }
+.about-details span {
+	font-size: 0.9rem;
+	font-weight: 500;
+	background: #bec2ba;
+}
+.about-details a {
+	text-decoration: underline;
+}
 .about-details .about-paragraph {
 	display: flex;
 	flex-direction: column;
@@ -727,6 +735,15 @@ Media Queries
 		width: 100%;
 		height: auto;
 	} */
+	.about-details .right p {
+		font-size: 1rem;
+		/* margin-bottom: 1.5rem; */
+	}
+	.about-details span {
+		font-size: 0.875rem;
+		font-weight: 500;
+		background: #bec2ba;
+	}
 
 	footer .text span,
 	footer .media-icons a {
