@@ -402,19 +402,14 @@
 						<p>Let's work together.</p>
 
 						<div class="form-container">
-							<form
-								name="contact"
-								method="POST"
-								data-netlify-recaptcha="true"
-								data-netlify="true"
-							>
+							<form name="contact" method="POST" data-netlify="true">
 								<div class="name-container">
-									<p class="first-name-container">
+									<div class="first-name-container">
 										<label>First Name:</label>
 										<br />
 										<input type="text" name="first-name" class="input-box" />
-									</p>
-									<p class="last-name-container">
+									</div>
+									<div class="last-name-container">
 										<label>Last Name:</label>
 										<br />
 										<input
@@ -422,9 +417,9 @@
 											name="last-name"
 											class="input-box name-box"
 										/>
-									</p>
+									</div>
 								</div>
-								<p class="email-container">
+								<div class="email-container">
 									<label>Email:</label>
 									<br />
 									<input
@@ -432,21 +427,21 @@
 										name="email"
 										class="input-box email-box"
 									/>
-								</p>
+								</div>
 
-								<p class="message-container">
-									<label>Message:</label>
+								<div class="message-container">
+									<label for="message">Message:</label>
 									<br />
 									<textarea
 										name="message"
 										rows="5"
-										cols="40"
+										cols=""
 										class="input-box message-box"
 									></textarea>
-								</p>
-								<p>
+								</div>
+								<div>
 									<button type="submit">Submit</button>
-								</p>
+								</div>
 							</form>
 						</div>
 					</div>
