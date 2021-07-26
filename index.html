@@ -398,52 +398,46 @@
 			<!-- Contact -->
 			<section class="contact" id="contact">
 				<div class="content section-container">
-					<div class="text">
-						<p>Let's work together.</p>
-
-						<div class="form-container">
-							<form name="contact" method="POST" data-netlify="true">
-								<div class="name-container">
-									<div class="first-name-container">
-										<label>First Name:</label>
-										<br />
-										<input type="text" name="first-name" class="input-box" />
-									</div>
-									<div class="last-name-container">
-										<label>Last Name:</label>
-										<br />
-										<input
-											type="text"
-											name="last-name"
-											class="input-box name-box"
-										/>
-									</div>
+					<div class="form-container">
+						<p class="contact-title">
+							Please fill out the form below to request a quote for a project,
+							inquire about a collaboration, or simply say hello.
+						</p>
+						<form name="contact" method="POST" data-netlify="true">
+							<div class="name-container">
+								<div class="first-name-container">
+									<label>First Name</label>
+									<br />
+									<input type="text" name="first-name" class="input-box" />
 								</div>
-								<div class="email-container">
-									<label>Email:</label>
+								<div class="last-name-container">
+									<label>Last Name</label>
 									<br />
 									<input
-										type="email"
-										name="email"
-										class="input-box email-box"
+										type="text"
+										name="last-name"
+										class="input-box name-box"
 									/>
 								</div>
+							</div>
+							<div class="email-container">
+								<label>Email</label>
+								<br />
+								<input type="email" name="email" class="input-box email-box" />
+							</div>
 
-								<div class="message-container">
-									<label for="message">Message:</label>
-									<br />
-									<textarea
-										name="message"
-										rows="5"
-										cols=""
-										class="input-box message-box"
-									></textarea>
-								</div>
-								<div>
-									<button type="submit">Submit</button>
-								</div>
-							</form>
-						</div>
+							<div class="message-container">
+								<label for="message">Message</label>
+								<br />
+								<textarea
+									name="message"
+									class="input-box message-box"
+								></textarea>
+							</div>
+							<div>
+								<button type="submit">Submit</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</section>

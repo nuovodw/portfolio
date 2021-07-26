@@ -127,7 +127,7 @@ section .button button,
 	background-color: var(--button-background);
 	color: var(--fc-primary);
 	cursor: pointer;
-	border: 2px solid var(--button-border);
+	border: 1px solid var(--button-border);
 	border-radius: 50px;
 
 	transition: all 0.2s ease-in-out;
@@ -563,6 +563,7 @@ Contact
 .contact {
 	background: var(--background-color-section);
 }
+
 .contact .content {
 	display: flex;
 	flex-direction: column;
@@ -577,16 +578,27 @@ Contact
 
 .contact .form-container {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
+.contact .contact-title,
 .contact form {
 	display: flex;
 	flex-direction: column;
-	width: 35rem;
+	/* width: 35rem; */
+}
+.contact input,
+.contact textarea {
+	border: 1px solid var(--button-border);
 }
 .contact label {
 	font-size: 0.85rem;
+}
+.contact .email-container,
+.contact .message-container {
+	margin-top: 1.5rem;
 }
 .contact .name-container {
 	display: flex;
@@ -594,7 +606,7 @@ Contact
 }
 
 .contact .name-container .input-box {
-	width: 17rem;
+	/* width: 17rem; */
 	height: 2.2rem;
 }
 
@@ -605,7 +617,7 @@ Contact
 
 .contact .message-container .input-box {
 	width: 100%;
-	height: 5rem;
+	height: 10rem;
 }
 
 .contact button {
