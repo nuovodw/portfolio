@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-	/* --background-primary: #171717; */
 	--background-primary: #ffffff;
 	--background-nav: #ffffffd8;
 	--background-footer: #111;
-
-	/* --background-color-section: #e0e6d0; */
-	/* --background-color-section: #ddffdf; */
-	/* --background-color-section: #c0c4bd; */
 	--background-color-section: #d9ddd5;
 
 	--fc-primary: #000000;
@@ -122,7 +117,8 @@ h4 {
 	text-transform: capitalize;
 }
 
-section .button button {
+section .button button,
+.contact button {
 	width: 12rem;
 	padding: 1.08rem 1rem;
 	font-size: 1.1rem;
@@ -136,7 +132,8 @@ section .button button {
 
 	transition: all 0.2s ease-in-out;
 }
-section .button button:hover {
+section .button button:hover,
+.contact button:hover {
 	transform: scale(1.1);
 }
 
@@ -447,9 +444,6 @@ i.tech-icon:first-child {
 /*********** 
 Projects
 ************/
-.projects {
-	margin-bottom: 4rem;
-}
 .projects .title {
 	margin: 2rem 0 2rem;
 }
@@ -564,7 +558,7 @@ i.tool-icon {
 }
 
 /*********** 
-Contact Me 
+Contact 
 ************/
 .contact {
 	background: var(--background-color-section);
@@ -574,20 +568,48 @@ Contact Me
 	flex-direction: column;
 	margin: 0 auto;
 }
-.contact .title {
-	display: none;
-	margin-bottom: 1rem;
-}
-.contact .text {
-	width: 80%;
-	margin: auto;
-}
+
 .contact p {
 	font-size: 1.5rem;
 	line-height: 1.8;
+	margin: 0 0 4rem;
 }
+
+.contact .form-container {
+	display: flex;
+	justify-content: center;
+}
+
+.contact form {
+	display: flex;
+	flex-direction: column;
+	width: 35rem;
+}
+.contact label {
+	font-size: 0.85rem;
+}
+.contact .name-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact .name-container .input-box {
+	width: 17rem;
+	height: 2.2rem;
+}
+
+.contact .email-container .input-box {
+	width: 100%;
+	height: 2.2rem;
+}
+
+.contact .message-container .input-box {
+	width: 100%;
+	height: 5rem;
+}
+
 .contact button {
-	margin: 3rem 0 0;
+	margin-top: 2rem;
 }
 
 /*********** 

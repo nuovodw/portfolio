@@ -227,9 +227,6 @@
 									></i>
 								</div>
 								<div class="project-links-container">
-									<!-- <span class="description" id="description-1"
-										>Description</span
-									> -->
 									<a href="https://dacapomusic.net/" target="_blank">Live</a>
 									<a
 										href="https://github.com/nuovodw/music_retail"
@@ -283,9 +280,6 @@
 									></i>
 								</div>
 								<div class="project-links-container">
-									<!-- <span class="description" id="description-2"
-										>Description</span
-									> -->
 									<a href="https://adia.netlify.app/" target="_blank">Live</a>
 									<a href="https://github.com/nuovodw/Adia" target="_blank"
 										>Code</a
@@ -333,9 +327,6 @@
 									></i>
 								</div>
 								<div class="project-links-container">
-									<!-- <span class="description" id="description-3"
-										>Description</span
-									> -->
 									<a href="https://weatherapp5.netlify.app" target="_blank"
 										>Live</a
 									>
@@ -389,9 +380,6 @@
 									></i>
 								</div>
 								<div class="project-links-container">
-									<!-- <span class="description" id="description-4"
-										>Description</span
-									> -->
 									<a href="https://danjwon.netlify.app/" target="_blank"
 										>Live</a
 									>
@@ -410,20 +398,63 @@
 			<!-- Contact -->
 			<section class="contact" id="contact">
 				<div class="content section-container">
-					<div class="title section-title"><h2>Contact</h2></div>
-					<div class="text center-text">
+					<div class="text">
 						<p>Let's work together.</p>
-						<div class="button">
-							<a href="mailto:dan.j.won@gmail.com">
-								<button>contact me</button>
-							</a>
+
+						<div class="form-container">
+							<form
+								name="contact"
+								method="POST"
+								data-netlify-recaptcha="true"
+								data-netlify="true"
+							>
+								<div class="name-container">
+									<p class="first-name-container">
+										<label>First Name:</label>
+										<br />
+										<input type="text" name="first-name" class="input-box" />
+									</p>
+									<p class="last-name-container">
+										<label>Last Name:</label>
+										<br />
+										<input
+											type="text"
+											name="last-name"
+											class="input-box name-box"
+										/>
+									</p>
+								</div>
+								<p class="email-container">
+									<label>Email:</label>
+									<br />
+									<input
+										type="email"
+										name="email"
+										class="input-box email-box"
+									/>
+								</p>
+
+								<p class="message-container">
+									<label>Message:</label>
+									<br />
+									<textarea
+										name="message"
+										rows="5"
+										cols="40"
+										class="input-box message-box"
+									></textarea>
+								</p>
+								<p>
+									<button type="submit">Submit</button>
+								</p>
+							</form>
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
 
-		<!-- Footer Section -->
+		<!-- Footer -->
 		<footer class="footer center-text" id="contact">
 			<div class="text">
 				<span id="footer-text">© 2021 <nobr>Daniel Won</nobr></span>
