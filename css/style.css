@@ -618,8 +618,10 @@ Contact
 	max-width: 45rem;
 }
 
-.contact p {
+.contact h3 {
 	font-size: 2.25rem;
+	text-transform: none;
+	font-weight: 300;
 	line-height: 1.8;
 	margin: 0 0 4rem;
 	text-align: center;
@@ -644,6 +646,7 @@ Contact
 	font-size: 1rem;
 	font-weight: 400;
 }
+
 .contact .email-container,
 .contact .message-container {
 	margin-top: 1.5rem;
@@ -828,7 +831,7 @@ Media Queries
 		background: #bec2ba;
 	}
 
-	.contact p {
+	.contact h3 {
 		margin-top: 0;
 		margin-bottom: 2rem;
 	}
@@ -854,8 +857,8 @@ Media Queries
 }
 
 @media (max-width: 382px) {
-	.contact p {
-		font-size: 1.75rem;
+	.contact h3 {
+		font-size: 1.6rem;
 	}
 	.contact label {
 		font-size: 0.85rem;
@@ -916,7 +919,7 @@ Media Queries
 	p {
 		font-size: 1rem;
 	}
-	.contact p {
+	.contact h3 {
 		font-size: 1.3rem;
 	}
 }
