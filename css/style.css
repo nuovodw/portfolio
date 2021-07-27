@@ -269,6 +269,7 @@ li.media-icons a:nth-child(1) {
 		justify-content: flex-end;
 		z-index: 10;
 		background: var(--background-nav);
+		max-width: 80rem;
 	}
 
 	nav .links {
@@ -446,6 +447,10 @@ About
 .about-details .about-paragraph {
 	display: flex;
 	flex-direction: column;
+}
+.about-details .about-paragraph li {
+	list-style-type: disc;
+	list-style-position: inside;
 }
 
 .about .left img {
@@ -694,7 +699,7 @@ Footer
 footer {
 	display: flex;
 	justify-content: center;
-	height: 6rem;
+	height: 3rem;
 	margin: 0 auto;
 	background: var(--background-color-section);
 }
@@ -745,6 +750,7 @@ Media Queries
 		margin-bottom: 0;
 	}
 	.about-details h3 {
+		font-size: 1.7rem;
 		margin: 2rem 0 1rem;
 	}
 
@@ -827,6 +833,10 @@ Media Queries
 		width: 10rem;
 		padding: 0.7rem 1rem;
 		font-size: 1rem;
+	}
+
+	.about-details h3 {
+		font-size: 1.5rem;
 	}
 }
 
