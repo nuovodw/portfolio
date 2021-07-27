@@ -70,7 +70,7 @@ body {
 	font-family: var(--ff-primary);
 	color: var(--fc-primary);
 	font-weight: 300;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	line-height: 1.4;
 	margin: 0 auto;
 	/* width: min(90%, 70.5rem); */
@@ -253,7 +253,6 @@ li.media-icons a {
 	margin-top: 2.3rem;
 	font-size: 1.5rem;
 	margin-left: 0.2rem;
-	/* margin-bottom: 0.6rem; */
 }
 li.media-icons a:nth-child(1) {
 	margin-left: 2.5rem;
@@ -477,7 +476,6 @@ About
 i.tech-icon {
 	font-size: 1.5rem;
 	color: var(--fc-primary);
-	/* color: var(--fc-secondary); */
 	padding: 0 0.75rem;
 }
 i.tech-icon:first-child {
@@ -536,7 +534,6 @@ Projects
 	border-bottom: none;
 	position: relative;
 	overflow: hidden;
-	/* z-index: 2; */
 	transition: all 0.4s ease;
 }
 
@@ -642,8 +639,17 @@ Contact
 .contact textarea {
 	border: 1px solid var(--button-border);
 }
+
 .contact label {
 	font-size: 1rem;
+	font-weight: 400;
+}
+.contact .email-container label {
+	font-size: 0.99rem;
+	font-weight: 400;
+}
+.contact .message-container label {
+	font-size: 0.999rem;
 	font-weight: 400;
 }
 
@@ -863,13 +869,16 @@ Media Queries
 	.contact label {
 		font-size: 0.85rem;
 	}
+	.contact .email-container label,
+	.contact .message-container label {
+		font-size: 0.85rem;
+	}
 }
 
 @media (max-width: 370px) {
 	.about i.tech-icon {
 		font-size: 1.2rem;
 		color: var(--fc-primary);
-		/* color: var(--fc-secondary); */
 		padding: 0 0.5rem;
 	}
 	i.tech-icon:first-child {
@@ -887,7 +896,6 @@ Media Queries
 	.about i.tech-icon {
 		font-size: 1.2rem;
 		color: var(--fc-primary);
-		/* color: var(--fc-secondary); */
 		padding: 0 0.5rem;
 	}
 	i.tech-icon:first-child {

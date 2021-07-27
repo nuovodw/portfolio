@@ -401,34 +401,51 @@
 					<div class="form-container">
 						<h3 class="contact-title">Let's work together.</h3>
 						<form name="contact" method="POST" data-netlify="true">
+							<!-- name -->
 							<div class="name-container">
 								<div class="first-name-container">
-									<label>First Name</label>
-									<br />
-									<input type="text" name="first-name" class="input-box" />
-								</div>
-								<div class="last-name-container">
-									<label>Last Name</label>
-									<br />
+									<label for="first-name">First Name</label>
+									<!-- <br /> -->
 									<input
 										type="text"
-										name="last-name"
+										id="first-name"
+										name="user_first-name"
+										class="input-box"
+									/>
+								</div>
+								<div class="last-name-container">
+									<label for="last-name">Last Name</label>
+									<!-- <br /> -->
+									<input
+										type="text"
+										id="last-name"
+										name="user_last-name"
 										class="input-box name-box"
 									/>
 								</div>
 							</div>
+
+							<!-- email -->
 							<div class="email-container">
-								<label>Email</label>
-								<br />
-								<input type="email" name="email" class="input-box email-box" />
+								<label for="mail">Email</label>
+								<!-- <br /> -->
+								<input
+									type="email"
+									id="mail"
+									name="user_email"
+									placeholder="example@hireme.com"
+									class="input-box"
+								/>
 							</div>
 
+							<!-- message -->
 							<div class="message-container">
-								<label>Message</label>
-								<br />
+								<label for="msg">Message</label>
+								<!-- <br /> -->
 								<textarea
-									name="message"
-									class="input-box message-box"
+									id="msg"
+									name="user_message"
+									class="input-box"
 								></textarea>
 							</div>
 							<div class="button">
