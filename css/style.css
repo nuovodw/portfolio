@@ -856,7 +856,7 @@ Media Queries
 	}
 }
 
-@media (max-width: 382px) {
+@media (max-width: 414px) {
 	.contact h3 {
 		font-size: 1.6rem;
 	}
