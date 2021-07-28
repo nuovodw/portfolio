@@ -81,6 +81,7 @@ footer {
 	margin: 0 auto;
 	width: 98%;
 }
+nav,
 section .section-container,
 footer .section-container {
 	width: min(90%, 70.5rem);
