@@ -269,7 +269,6 @@ li.media-icons a:nth-child(1) {
 		justify-content: flex-end;
 		z-index: 10;
 		background: var(--background-nav);
-		max-width: 80rem;
 	}
 
 	nav .links {
@@ -422,34 +421,28 @@ About
 	display: flex;
 	flex-direction: column;
 	padding-left: 2rem;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 .about-details .topic {
 	display: flex;
 	margin-bottom: 1.5rem;
 }
 .about-details .right h3 {
+	font-size: 1.75rem;
 	text-transform: capitalize;
 	font-weight: 300;
 }
-.about-details .right p {
-	color: var(--fc-secondary);
-	/* margin-bottom: 1.5rem; */
-}
-.about-details span {
-	font-size: 0.9rem;
-	font-weight: 500;
-	background: #bec2ba;
-}
-.about-details a {
-	text-decoration: underline;
-}
+
 .about-details .about-paragraph {
+	font-size: 1rem;
+	color: var(--fc-secondary);
+	font-weight: 300;
 	display: flex;
 	flex-direction: column;
 }
 .about-details .about-paragraph li {
-	list-style-type: disc;
+	color: var(--fc-secondary);
+	list-style-type: square;
 	list-style-position: inside;
 }
 
@@ -642,6 +635,7 @@ Contact
 }
 .contact input,
 .contact textarea {
+	font-family: var(--ff-primary);
 	border: 1px solid var(--button-border);
 }
 
@@ -685,6 +679,7 @@ Contact
 
 .contact .message-container .input-box {
 	font-size: 1rem;
+
 	width: 100%;
 	height: 10rem;
 }
@@ -733,14 +728,25 @@ Media Queries
 *******************/
 
 @media (max-width: 992px) {
+	h1 {
+		font-size: 3.5rem;
+	}
+	h2 {
+		font-size: 2.7rem;
+	}
+
 	.about .about-details {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
+	.about-details .about-paragraph {
+		font-size: 1rem;
+	}
 	.about-details .right {
 		padding-left: 0;
 	}
+
 	.about .left img {
 		width: 18rem;
 		height: auto;
@@ -750,7 +756,6 @@ Media Queries
 		margin-bottom: 0;
 	}
 	.about-details h3 {
-		font-size: 1.7rem;
 		margin: 2rem 0 1rem;
 	}
 
@@ -783,16 +788,6 @@ Media Queries
 	.projects .boxes .box-1,
 	.projects .boxes .box-3 {
 		margin-right: 2rem;
-	}
-
-	h1 {
-		font-size: 3.5rem;
-	}
-	h2 {
-		font-size: 2.7rem;
-	}
-	p {
-		font-size: 1rem;
 	}
 }
 
@@ -841,9 +836,6 @@ Media Queries
 }
 
 @media (max-width: 475px) {
-	.about-details .right p {
-		font-size: 1rem;
-	}
 	.about-details span {
 		font-size: 0.875rem;
 		font-weight: 500;
@@ -884,6 +876,12 @@ Media Queries
 	}
 	.contact .email-container label,
 	.contact .message-container label {
+		font-size: 0.85rem;
+	}
+
+	.contact .name-container .input-box,
+	.contact .email-container .input-box,
+	.contact .message-container .input-box {
 		font-size: 0.85rem;
 	}
 }
