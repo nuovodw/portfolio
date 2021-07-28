@@ -81,7 +81,6 @@ footer {
 	margin: 0 auto;
 	width: 98%;
 }
-nav,
 section .section-container,
 footer .section-container {
 	width: min(90%, 70.5rem);
@@ -157,22 +156,13 @@ nav {
 	left: 0;
 	right: 0;
 	top: 0;
+	margin: 0 auto;
 	padding: 0 5%;
 	height: 3.5rem;
 	background: var(--background-nav);
 }
 nav::after {
 	background: var(--background-primary);
-}
-nav .logo {
-	display: flex;
-	float: none;
-	width: auto;
-	height: 100%;
-	align-items: center;
-	justify-content: center;
-	font-size: 24px;
-	color: #fff;
 }
 
 nav .links {
@@ -429,13 +419,13 @@ About
 	margin-bottom: 1.5rem;
 }
 .about-details .right h3 {
-	font-size: 1.75rem;
+	font-size: 2rem;
 	text-transform: capitalize;
 	font-weight: 300;
 }
 
 .about-details .about-paragraph {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	color: var(--fc-secondary);
 	font-weight: 300;
 	display: flex;
@@ -582,7 +572,7 @@ Projects
 	margin-bottom: 0.75rem;
 }
 .project-description {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	color: var(--fc-secondary);
 	line-height: 1.4;
 	font-weight: 300;
@@ -728,6 +718,7 @@ footer .media-icons a:hover {
 Media Queries
 *******************/
 
+/* iphone X portrait */
 @media (max-width: 992px) {
 	h1 {
 		font-size: 3.5rem;
@@ -741,9 +732,7 @@ Media Queries
 		flex-direction: column;
 		align-items: center;
 	}
-	.about-details .about-paragraph {
-		font-size: 1rem;
-	}
+
 	.about-details .right {
 		padding-left: 0;
 	}
@@ -796,12 +785,6 @@ Media Queries
 	section .section-container {
 		padding: 4rem 0;
 	}
-	h1 {
-		font-size: 3rem;
-	}
-	h2 {
-		font-size: 2.5rem;
-	}
 
 	.projects .boxes {
 		padding: 0;
@@ -825,24 +808,20 @@ Media Queries
 }
 
 @media (max-width: 576px) {
+	h1 {
+		font-size: 3rem;
+	}
+	h2 {
+		font-size: 2.5rem;
+	}
 	section .button button {
 		width: 10rem;
 		padding: 0.7rem 1rem;
 		font-size: 1rem;
 	}
-
-	.about-details h3 {
-		font-size: 1.5rem;
-	}
 }
 
 @media (max-width: 475px) {
-	.about-details span {
-		font-size: 0.875rem;
-		font-weight: 500;
-		background: #bec2ba;
-	}
-
 	.contact h3 {
 		margin-top: 0;
 		margin-bottom: 2rem;
@@ -869,8 +848,14 @@ Media Queries
 }
 
 @media (max-width: 414px) {
+	.about-details .about-paragraph,
+	.project-description {
+		font-size: 1.1rem;
+	}
+
 	.contact h3 {
 		font-size: 1.6rem;
+		font-weight: 400;
 	}
 	.contact label {
 		font-size: 0.85rem;
