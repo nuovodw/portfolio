@@ -903,6 +903,11 @@ Media Queries
 		padding: 0.3rem 1rem;
 		font-size: 1rem;
 	}
+	.about .left img {
+		width: 13rem;
+		height: auto;
+		object-fit: contain;
+	}
 
 	.about i.tech-icon {
 		font-size: 1.2rem;
