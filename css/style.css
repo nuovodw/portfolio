@@ -436,6 +436,9 @@ About
 	list-style-type: square;
 	list-style-position: inside;
 }
+.about-details .about-paragraph .about-emphasize {
+	font-weight: 400;
+}
 
 .about .left img {
 	width: auto;
