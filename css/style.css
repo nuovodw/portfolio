@@ -473,8 +473,9 @@ i.tech-icon {
 i.tech-icon:first-child {
 	padding-left: 0;
 }
-.fa-git-square {
+i.fab.fa-git-square.tech-icon {
 	font-size: 1.6rem;
+	padding-top: 0.0078122rem;
 }
 
 .about .button {
@@ -892,6 +893,10 @@ Media Queries
 	}
 	i.tech-icon:first-child {
 		padding-left: 0;
+	}
+	i.fab.fa-git-square.tech-icon {
+		font-size: 1.3rem;
+		padding-top: 0.07rem;
 	}
 }
 
