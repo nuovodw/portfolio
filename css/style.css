@@ -473,6 +473,9 @@ i.tech-icon {
 i.tech-icon:first-child {
 	padding-left: 0;
 }
+.fa-git-square {
+	font-size: 1.6rem;
+}
 
 .about .button {
 	margin: 0 auto;
