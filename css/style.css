@@ -473,7 +473,7 @@ i.tech-icon {
 i.tech-icon:first-child {
 	padding-left: 0;
 }
-i.fab.fa-git-square.tech-icon {
+.about i.fa-git-square {
 	font-size: 1.6rem;
 	padding-top: 0.0078122rem;
 }
@@ -894,7 +894,7 @@ Media Queries
 	i.tech-icon:first-child {
 		padding-left: 0;
 	}
-	i.fab.fa-git-square.tech-icon {
+	.about i.fa-git-square {
 		font-size: 1.3rem;
 		padding-top: 0.07rem;
 	}
@@ -919,6 +919,10 @@ Media Queries
 	}
 	i.tech-icon:first-child {
 		padding-left: 0;
+	}
+	.about i.fa-git-square {
+		font-size: 1.28rem;
+		padding-top: 0.07rem;
 	}
 
 	.project-links-container a,
